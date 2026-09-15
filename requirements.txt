@@ -1,0 +1,8 @@
+# Python deps for the Vercel serverless function at api/index.py.
+# Vercel auto-detects Python via this file at the repo root.
+# NOTE: python-telegram-bot is intentionally NOT here — that's only needed
+# by telegram-bot/bot.py, which never runs on Vercel. Keeping it out of
+# this file keeps the serverless function's cold start fast.
+fastapi>=0.111
+requests>=2.31
+pydantic>=2.0

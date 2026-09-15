@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/* three swappable palettes via data-theme on <html>, default = weathered ✧ */
+
+@theme {
+  /* defaults = weathered */
+  --color-retro-green: #c9cec9;
+  --color-retro-dark: #23282b;
+  --color-retro-bg: #15181a;
+  --color-retro-alert: #c07a6c;
+  --font-pixel: var(--font-pixel-family), monospace;
+}
+
+:root {
+  --shadow-rgb: 0, 0, 0;
+  --alert-rgb: 130, 60, 48;
+  --highlight-rgb: 200, 205, 200;
+}
+
+[data-theme="weathered"] {
+  --color-retro-green: #c9cec9;   /* pale worn steel — ink on a dark panel */
+  --color-retro-dark: #23282b;    /* panel surface, cold dark gray */
+  --color-retro-bg: #15181a;      /* page background, near-black charcoal */
+  --color-retro-alert: #c07a6c;   /* muted worn red */
+  --shadow-rgb: 0, 0, 0;
+  --alert-rgb: 130, 60, 48;
+  --highlight-rgb: 200, 205, 200; /* used instead of a dark shadow — a faint pale edge reads on a dark bg where a black one wouldn't */
+}
+
+[data-theme="cream"] {
+  --color-retro-green: #33361f;   /* dark olive ink */
+  --color-retro-dark: #fffaf0;    /* near-white cream panel */
+  --color-retro-bg: #f3e9d2;      /* warm cream page */
+  --color-retro-alert: #b8452f;
+  --shadow-rgb: 51, 54, 31;
+  --alert-rgb: 184, 69, 47;
+  --highlight-rgb: 51, 54, 31;
+}
+
+[data-theme="paper"] {
+  --color-retro-green: #4a3c28;   /* dark sepia ink */
+  --color-retro-dark: #efe6cc;    /* aged paper panel */
+  --color-retro-bg: #ded1b0;      /* aged parchment page */
+  --color-retro-alert: #9c4a2e;
+  --shadow-rgb: 74, 60, 40;
+  --alert-rgb: 156, 74, 46;
+  --highlight-rgb: 74, 60, 40;
+}
+
+body {
+  background-color: var(--color-retro-bg);
+  color: var(--color-retro-green);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  height: 100vh; /* fallback for older WebViews without dvh support */
+  height: 100dvh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* no scanlines anywhere — weathered gets a soft vignette instead ᓚ₍⑅^..^₎♡ */
+.crt-overlay {
+  display: none;
+}
+.crt-vignette {
+  display: none;
+}
+[data-theme="weathered"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  box-shadow: inset 0 0 10vw rgba(0, 0, 0, 0.55);
+}
+
+/* flat hard-edged shadow, theme-aware so it works on light and dark bg alike */
+.text-glow {
+  text-shadow: 1px 1px 0 rgba(var(--shadow-rgb), 0.18);
+}
+[data-theme="weathered"] .text-glow {
+  text-shadow: 0 0 6px rgba(var(--highlight-rgb), 0.35);
+}
+
+.box-glow {
+  box-shadow: 3px 3px 0 rgba(var(--shadow-rgb), 0.2);
+}
+[data-theme="weathered"] .box-glow {
+  box-shadow: 0 0 0 1px rgba(var(--highlight-rgb), 0.12), 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box-glow-alert {
+  box-shadow: 3px 3px 0 rgba(var(--alert-rgb), 0.35);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-retro-bg);
+  border-left: 1px solid rgba(var(--shadow-rgb), 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(var(--shadow-rgb), 0.5);
+  border: 1px solid var(--color-retro-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--shadow-rgb), 0.8);
+}
+
+/* tiny screw-head detail, used by BoltCorners ⚙ */
+.bolt-icon {
+  border: 1px solid rgba(var(--shadow-rgb), 0.4);
+  background: rgba(var(--shadow-rgb), 0.08);
+  position: relative;
+}
+[data-theme="weathered"] .bolt-icon {
+  border-color: rgba(var(--highlight-rgb), 0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+.bolt-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 65%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* bezel: raised hardware-panel edge. bezel-inverted: pressed/inset look —
+   for screens/wells sunk into the panel (portraits, log boxes). credit:
+   adapted from the reference codebase's border technique */
+.bezel {
+  box-shadow:
+    inset 2px 2px 0px rgba(var(--highlight-rgb), 0.15),
+    inset -2px -2px 0px rgba(var(--shadow-rgb), 0.5),
+    inset 4px 4px 0px rgba(var(--highlight-rgb), 0.06),
+    inset -4px -4px 0px rgba(var(--shadow-rgb), 0.3);
+}
+.bezel-inverted {
+  box-shadow:
+    inset 2px 2px 0px rgba(var(--shadow-rgb), 0.5),
+    inset -2px -2px 0px rgba(var(--highlight-rgb), 0.15),
+    inset 4px 4px 0px rgba(var(--shadow-rgb), 0.3),
+    inset -4px -4px 0px rgba(var(--highlight-rgb), 0.06);
+}
