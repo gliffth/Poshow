@@ -1,0 +1,54 @@
+{
+  "name": "Fire Stone",
+  "category": "General items",
+  "effect": "Evolves certain species of Pokémon.",
+  "image_url": "https://img.pokemondb.net/sprites/items/fire-stone.png",
+  "image_alt": "Fire Stone icon",
+  "item_url": "https://pokemondb.net/item/fire-stone",
+  "source_url": "https://pokemondb.net/item/fire-stone",
+  "full_effect": "TheFire Stonecauses the following Pokémon to evolve:",
+  "short_description": null,
+  "game_descriptions": {
+    "Ruby/SapphireEmerald": "Makes certain species of POKéMON evolve.",
+    "FireRed/LeafGreen": "A peculiar stone that makes certain species of POKéMON evolve. It is colored orange.",
+    "Diamond/PearlPlatinumHeartGold/SoulSilver": "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange.",
+    "Black/WhiteBlack 2/White 2": "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange.",
+    "X/YO.Ruby/A.Sapphire": "A peculiar stone that can make certain species of Pokémon evolve. The stone has a fiery orange heart.",
+    "Sun/MoonUltra Sun/Ultra MoonL.G. Pikachu/L.G. Eevee": "A peculiar stone that can make certain species of Pokémon evolve. The stone has a fiery orange heart.",
+    "Sword/ShieldB.Diamond/S.Pearl": "A peculiar stone that can make certain species of Pokémon evolve. The stone has a fiery orange heart.",
+    "Scarlet/Violet": "A peculiar stone that can make certain species of Pokémon evolve. It has a fiery orange heart."
+  },
+  "languages": {
+    "English": "Fire Stone",
+    "Japanese": "ほのおのいし",
+    "German": "Feuerstein",
+    "French": "Pierre Feu",
+    "Italian": "Pietrafocaia",
+    "Spanish": "Piedra Fuego",
+    "Korean": "불꽃의돌",
+    "Chinese (Simplified)": "火之石",
+    "Chinese (Traditional)": "火之石"
+  },
+  "locations": [],
+  "evolution": [
+    {
+      "raw": "Vulpix(evolves intoNinetales)"
+    },
+    {
+      "raw": "Growlithe(evolves intoArcanine)"
+    },
+    {
+      "raw": "Hisuian Growlithe(evolves intoHisuian Arcanine)"
+    },
+    {
+      "raw": "Eevee(evolves intoFlareon)"
+    },
+    {
+      "raw": "Pansear(evolves intoSimisear)"
+    },
+    {
+      "raw": "Capsakid(evolves intoScovillain)"
+    }
+  ],
+  "held_by_pokemon": []
+}

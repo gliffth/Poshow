@@ -1,0 +1,20 @@
+{
+  "source": "https://pokemondb.net/ability",
+  "scraped_at": "2026-09-22T13:21:08.876797Z",
+  "total_abilities": 308,
+  "unique_abilities": 308,
+  "duplicate_abilities": 0,
+  "failed_detail_pages": 0,
+  "missing_fields": {
+    "short_description": 1
+  },
+  "detail_data": {
+    "game_descriptions": 1378,
+    "pokemon_tables": 282,
+    "hidden_ability_sections": 167
+  },
+  "pokemon_records": 1830,
+  "hidden_ability_pokemon_records": 947,
+  "failed_abilities": [],
+  "status": "partial"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Master Ball",
+  "category": "Pokeballs",
+  "effect": "Catches any wild Pokémon without fail.",
+  "image_url": "https://img.pokemondb.net/sprites/items/master-ball.png",
+  "image_alt": "Master Ball icon",
+  "item_url": "https://pokemondb.net/item/master-ball",
+  "source_url": "https://pokemondb.net/item/master-ball",
+  "full_effect": "Catches any wild Pokémon without fail.",
+  "short_description": null,
+  "game_descriptions": {
+    "Ruby/SapphireEmerald": "The best BALL that catches a POKéMON without fail.",
+    "FireRed/LeafGreen": "The best BALL with the ultimate performance. It will catch any wild POKéMON without fail.",
+    "Diamond/PearlPlatinumHeartGold/SoulSilver": "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail.",
+    "Black/WhiteBlack 2/White 2": "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail.",
+    "X/YO.Ruby/A.Sapphire": "The best Poké Ball with the ultimate level of performance. With it, you will catch any wild Pokémon without fail.",
+    "Sun/MoonUltra Sun/Ultra MoonL.G. Pikachu/L.G. Eevee": "The best Poké Ball with the ultimate level of performance. With it, you will catch any wild Pokémon without fail.",
+    "Sword/ShieldB.Diamond/S.Pearl": "The best Poké Ball with the ultimate level of performance. With it, you will catch any wild Pokémon without fail.",
+    "Scarlet/Violet": "The very best Poké Ball with the ultimate level of performance. With it, you will catch any wild Pokémon without fail."
+  },
+  "languages": {
+    "English": "Master Ball",
+    "Japanese": "マスターボール",
+    "German": "Meisterball",
+    "French": "Master Ball",
+    "Italian": "Master Ball",
+    "Spanish": "Master Ball",
+    "Korean": "마스터볼",
+    "Chinese (Simplified)": "大师球",
+    "Chinese (Traditional)": "大師球"
+  },
+  "locations": [],
+  "evolution": [],
+  "held_by_pokemon": []
+}

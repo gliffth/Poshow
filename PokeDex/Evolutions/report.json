@@ -1,0 +1,51 @@
+{
+  "source": "https://pokemondb.net/evolution",
+  "scraped_at": "2026-09-22T18:05:00.281005Z",
+  "generations": {
+    "1": 127,
+    "2": 50,
+    "3": 69,
+    "4": 35,
+    "5": 81,
+    "6": 38,
+    "7": 36,
+    "8": 46,
+    "9": 42
+  },
+  "total_evolution_edges": 524,
+  "unique_evolution_edges": 524,
+  "duplicate_edges": 0,
+  "total_chains": 359,
+  "branching_chains": 9,
+  "condition_types": {
+    "level": 373,
+    "time": 27,
+    "friendship": 20,
+    "stone": 56,
+    "battle_move": 3,
+    "trade_item": 16,
+    "trade": 11,
+    "item": 15,
+    "location": 5,
+    "attack_defense": 2,
+    "move": 16,
+    "special": 10,
+    "gender": 14
+  },
+  "pokemon_without_evolution": 203,
+  "missing_fields": {
+    "from_pokemon": 0,
+    "to_pokemon": 0,
+    "condition_text": 0,
+    "pokemon_url": 0,
+    "pokedex_number": 0
+  },
+  "validation": {
+    "main_page_vs_method_pages": "passed",
+    "duplicate_check": "passed",
+    "json_validation": "passed",
+    "unicode_validation": "passed"
+  },
+  "failed_pages": [],
+  "status": "success"
+}

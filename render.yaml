@@ -1,0 +1,23 @@
+# Render "Blueprint": New + → Blueprint → pick this repo. Or copy the same values into a Web Service by hand.
+services:
+  - type: web
+    name: poshow
+    runtime: python
+    plan: free
+    region: oregon
+    branch: main
+    # repo ROOT (leave "Root Directory" empty) — api/index.py imports from api/_lib itself
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.index:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY      # use the service_role key here (secret!) — see docs/DEPLOY.md
+        sync: false
+      - key: BOT_USERNAME      # your bot's @username without the @ — enables the "Open Telegram bot" login button
+        sync: false
+      - key: ALLOWED_ORIGINS   # e.g. https://poshow.vercel.app  (optional, recommended)
+        sync: false
+      - key: AUTH_SECRET       # signs login tokens; Render generates a random one
+        generateValue: true

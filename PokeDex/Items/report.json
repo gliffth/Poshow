@@ -1,0 +1,23 @@
+{
+  "source": "https://pokemondb.net/item/all",
+  "scraped_at": "2026-09-22T20:53:33.967777",
+  "total_items": 1473,
+  "unique_items": 1473,
+  "duplicate_items": 0,
+  "successful_detail_pages": 1473,
+  "failed_detail_pages": 0,
+  "missing_fields": {
+    "name": 0,
+    "category": 187,
+    "effect": 71,
+    "image_url": 0,
+    "item_url": 0
+  },
+  "detail_data": {
+    "game_descriptions": 1332,
+    "locations": 0,
+    "evolution_data": 250
+  },
+  "errors": [],
+  "status": "success"
+}
