@@ -1,0 +1,37 @@
+{
+  "name": "Oran Berry",
+  "category": "Berries",
+  "effect": "If held by a Pokémon, it heals the user by just 10 HP.",
+  "image_url": "https://img.pokemondb.net/sprites/items/oran-berry.png",
+  "image_alt": "Oran Berry icon",
+  "item_url": "https://pokemondb.net/item/oran-berry",
+  "source_url": "https://pokemondb.net/item/oran-berry",
+  "full_effect": "If held by a Pokémon, it heals the user by just 10 HP.",
+  "short_description": null,
+  "game_descriptions": {
+    "Ruby/SapphireEmerald": "A hold item that restores 10 HP in battle.",
+    "FireRed/LeafGreen": "When held by a POKéMON, it will be used in battle to restore 10 HP.",
+    "Diamond/PearlPlatinum": "A Poffin ingredient. It may be used or held by a Pokémon to heal the user by just 10 HP.",
+    "HeartGold/SoulSilver": "It may be used or held by a Pokémon to heal the user by just 10 HP.",
+    "Black/White": "If held by a Pokémon,  it heals the user by just 10 HP.",
+    "Black 2/White 2": "If held by a Pokémon, it heals the user by just 10 HP.",
+    "X/YO.Ruby/A.Sapphire": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can restore its own HP by 10 points during battle.",
+    "Sun/MoonUltra Sun/Ultra Moon": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can restore its own HP by 10 points during battle.",
+    "Sword/ShieldB.Diamond/S.Pearl": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can restore its own HP by 10 points during battle.",
+    "Scarlet/Violet": "If a Pokémon holds one of these Berries, it will be able to restore 10 HP to itself."
+  },
+  "languages": {
+    "English": "Oran Berry",
+    "Japanese": "オレンのみ",
+    "German": "Sinelbeere",
+    "French": "Baie Oran",
+    "Italian": "Baccarancia",
+    "Spanish": "Baya Aranja",
+    "Korean": "오랭열매",
+    "Chinese (Simplified)": "橙橙果",
+    "Chinese (Traditional)": "橙橙果"
+  },
+  "locations": [],
+  "evolution": [],
+  "held_by_pokemon": []
+}

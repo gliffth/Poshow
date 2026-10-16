@@ -1,0 +1,6 @@
+# keep the serverless bundle small — none of this is needed at runtime on Vercel
+PokeDex/
+telegram-bot/
+database/
+docs/
+*.md
