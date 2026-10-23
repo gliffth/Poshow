@@ -1,0 +1,5 @@
+# Deps for running the actual Telegram bot (bot.py) — this process is NOT
+# deployed to Vercel (see telegram-bot/README.md for why and what to use
+# instead). Run this wherever you host the bot.
+python-telegram-bot>=21.0
+requests>=2.31

@@ -1,0 +1,25 @@
+{
+  "source": "https://pokemondb.net/move/all",
+  "scraped_at": "2026-09-22T12:49:43.237487Z",
+  "total_records": 934,
+  "unique_moves": 934,
+  "duplicates": 0,
+  "missing_fields": {
+    "name": 0,
+    "type": 0,
+    "category": 70,
+    "power": 380,
+    "accuracy": 249,
+    "pp": 21,
+    "effect": 38,
+    "effect_probability": 701,
+    "move_url": 0
+  },
+  "categories": {
+    "physical": 354,
+    "special": 240,
+    "status": 270,
+    "other_or_null": 70
+  },
+  "status": "success"
+}

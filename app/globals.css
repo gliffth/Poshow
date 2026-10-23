@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+/* Three palettes selected by data-theme on <html>; weathered is the default */
+
+@theme {
+  /* defaults = weathered */
+  --color-retro-green: #c9cec9;
+  --color-retro-dark: #23282b;
+  --color-retro-bg: #15181a;
+  --color-retro-alert: #c07a6c;
+  --font-pixel: var(--font-pixel-family), monospace;
+}
+
+:root {
+  --shadow-rgb: 0, 0, 0;
+  --alert-rgb: 130, 60, 48;
+  --highlight-rgb: 200, 205, 200;
+}
+
+[data-theme="weathered"] {
+  --color-retro-green: #c9cec9;   /* pale worn steel — ink on a dark panel */
+  --color-retro-dark: #23282b;    /* panel surface, cold dark gray */
+  --color-retro-bg: #15181a;      /* page background, near-black charcoal */
+  --color-retro-alert: #c07a6c;   /* muted worn red */
+  --shadow-rgb: 0, 0, 0;
+  --alert-rgb: 130, 60, 48;
+  --highlight-rgb: 200, 205, 200; /* used instead of a dark shadow — a faint pale edge reads on a dark bg where a black one wouldn't */
+}
+
+[data-theme="cream"] {
+  --color-retro-green: #33361f;   /* dark olive ink */
+  --color-retro-dark: #fffaf0;    /* near-white cream panel */
+  --color-retro-bg: #f3e9d2;      /* warm cream page */
+  --color-retro-alert: #b8452f;
+  --shadow-rgb: 51, 54, 31;
+  --alert-rgb: 184, 69, 47;
+  --highlight-rgb: 51, 54, 31;
+}
+
+[data-theme="paper"] {
+  --color-retro-green: #4a3c28;   /* dark sepia ink */
+  --color-retro-dark: #efe6cc;    /* aged paper panel */
+  --color-retro-bg: #ded1b0;      /* aged parchment page */
+  --color-retro-alert: #9c4a2e;
+  --shadow-rgb: 74, 60, 40;
+  --alert-rgb: 156, 74, 46;
+  --highlight-rgb: 74, 60, 40;
+}
+
+body {
+  background-color: var(--color-retro-bg);
+  color: var(--color-retro-green);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  height: 100vh; /* fallback for older WebViews without dvh support */
+  height: 100dvh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* No scanlines; the weathered theme uses a soft vignette instead */
+.crt-overlay {
+  display: none;
+}
+.crt-vignette {
+  display: none;
+}
+[data-theme="weathered"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  box-shadow: inset 0 0 10vw rgba(0, 0, 0, 0.55);
+}
+
+@keyframes crt-flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.82; }
+  94% { opacity: 1; }
+  96% { opacity: 0.9; }
+  97% { opacity: 1; }
+}
+[data-theme="weathered"] .crt-flicker-root {
+  animation: crt-flicker 6s steps(1) infinite;
+}
+
+@keyframes boot-flash {
+  0% { opacity: 0; transform: translateX(-4px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.boot-flash-line {
+  animation: boot-flash 0.15s ease-out both;
+}
+
+/* flat hard-edged shadow, theme-aware so it works on light and dark bg alike */
+.text-glow {
+  text-shadow: 1px 1px 0 rgba(var(--shadow-rgb), 0.18);
+}
+[data-theme="weathered"] .text-glow {
+  text-shadow: 0 0 6px rgba(var(--highlight-rgb), 0.35);
+}
+
+.box-glow {
+  box-shadow: 2px 2px 0 rgba(var(--shadow-rgb), 0.12);
+}
+[data-theme="weathered"] .box-glow {
+  box-shadow: 0 0 0 1px rgba(var(--highlight-rgb), 0.08), 2px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.box-glow-alert {
+  box-shadow: 3px 3px 0 rgba(var(--alert-rgb), 0.35);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-retro-bg);
+  border-left: 1px solid rgba(var(--shadow-rgb), 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(var(--shadow-rgb), 0.5);
+  border: 1px solid var(--color-retro-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--shadow-rgb), 0.8);
+}
+
+/* tiny screw-head detail, used by BoltCorners ⚙ */
+.bolt-icon {
+  border: 1px solid rgba(var(--shadow-rgb), 0.4);
+  background: rgba(var(--shadow-rgb), 0.08);
+  position: relative;
+}
+[data-theme="weathered"] .bolt-icon {
+  border-color: rgba(var(--highlight-rgb), 0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+.bolt-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 65%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* bezel: raised hardware-panel edge. bezel-inverted: pressed/inset look —
+   for screens/wells sunk into the panel (portraits, log boxes). credit:
+   adapted from the reference codebase's border technique */
+.bezel {
+  box-shadow:
+    inset 2px 2px 0px rgba(var(--highlight-rgb), 0.15),
+    inset -2px -2px 0px rgba(var(--shadow-rgb), 0.5),
+    inset 4px 4px 0px rgba(var(--highlight-rgb), 0.06),
+    inset -4px -4px 0px rgba(var(--shadow-rgb), 0.3);
+}
+.bezel-inverted {
+  box-shadow:
+    inset 2px 2px 0px rgba(var(--shadow-rgb), 0.5),
+    inset -2px -2px 0px rgba(var(--highlight-rgb), 0.15),
+    inset 4px 4px 0px rgba(var(--shadow-rgb), 0.3),
+    inset -4px -4px 0px rgba(var(--highlight-rgb), 0.06);
+}
+
+
+/* ── "Screen flicker" off: no CRT flicker, no moving scanlines, no pulsing/blinking, no flash-in text.
+      Also applied automatically for people whose OS asks for reduced motion. ── */
+html.no-flicker .crt-flicker-root,
+html.no-flicker body::before,
+html.no-flicker .boot-flash-line,
+html.no-flicker .animate-pulse {
+  animation: none !important;
+}
+html.no-flicker body::before {
+  opacity: 0.25;
+}
+@media (prefers-reduced-motion: reduce) {
+  .crt-flicker-root,
+  body::before,
+  .boot-flash-line,
+  .animate-pulse {
+    animation: none !important;
+  }
+}
+
+/* ── evolution scene ── */
+@keyframes evo-flash { 0% { opacity: 0; } 35% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes evo-spark { 0% { transform: translateY(8px) scale(0.4); opacity: 0; } 40% { opacity: 1; } 100% { transform: translateY(-26px) scale(1.2); opacity: 0; } }
+@keyframes evo-glow { 0%, 100% { filter: brightness(1) drop-shadow(0 0 0 #fff); } 50% { filter: brightness(1.7) drop-shadow(0 0 14px #fff); } }
+.evo-flash { animation: evo-flash 0.8s ease-out forwards; }
+.evo-spark { animation: evo-spark 1.1s ease-out infinite; }
+.evo-glow { animation: evo-glow 0.9s ease-in-out infinite; }
+html.no-flicker .evo-spark, html.no-flicker .evo-glow { animation: none !important; }
+html.no-flicker .evo-flash { animation-duration: 0.4s; }
