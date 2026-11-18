@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "source": "https://pokemondb.net/mechanics/hidden"
+  },
+  "individual_values": {
+    "range": {
+      "minimum": 0,
+      "maximum": 31
+    },
+    "stats": {
+      "hp": {
+        "minimum": 0,
+        "maximum": 31
+      },
+      "attack": {
+        "minimum": 0,
+        "maximum": 31
+      },
+      "defense": {
+        "minimum": 0,
+        "maximum": 31
+      },
+      "special_attack": {
+        "minimum": 0,
+        "maximum": 31
+      },
+      "special_defense": {
+        "minimum": 0,
+        "maximum": 31
+      },
+      "speed": {
+        "minimum": 0,
+        "maximum": 31
+      }
+    },
+    "hidden_power": {
+      "affected_by_ivs": true
+    }
+  },
+  "personality_values": {
+    "introduced_generation": 3,
+    "determines": {
+      "gender": true,
+      "shininess": true,
+      "ability": true,
+      "nature": true,
+      "unown_letter": true,
+      "wurmple_evolution": true,
+      "spinda_spots": true
+    },
+    "shininess": {
+      "chance": {
+        "numerator": 1,
+        "denominator": 8192
+      },
+      "ratio": "1/8192"
+    },
+    "ability": {
+      "affected_when": "pokemon_has_two_abilities"
+    },
+    "nature": {
+      "determined_by_personality_value": true
+    },
+    "unown_letter": {
+      "determined_by_personality_value": true
+    },
+    "wurmple_evolution": {
+      "possible_results": [
+        "Silcoon",
+        "Cascoon"
+      ],
+      "determined_by_personality_value": true
+    },
+    "spinda_spots": {
+      "determined_by_personality_value": true
+    }
+  },
+  "characteristics": {
+    "by_stat": {
+      "hp": [
+        "Loves to eat",
+        "Takes plenty of siestas",
+        "Nods off a lot",
+        "Scatters things often",
+        "Likes to relax"
+      ],
+      "attack": [
+        "Proud of its power",
+        "Likes to thrash about",
+        "A little quick tempered",
+        "Likes to fight",
+        "Quick tempered"
+      ],
+      "defense": [
+        "Sturdy body",
+        "Capable of taking hits",
+        "Highly persistent",
+        "Good endurance",
+        "Good perseverance"
+      ],
+      "special_attack": [
+        "Highly curious",
+        "Mischievous",
+        "Thoroughly cunning",
+        "Often lost in thought",
+        "Very finicky"
+      ],
+      "special_defense": [
+        "Strong willed",
+        "Somewhat vain",
+        "Strongly defiant",
+        "Hates to lose",
+        "Somewhat stubborn"
+      ],
+      "speed": [
+        "Likes to run",
+        "Alert to sounds",
+        "Impetuous and silly",
+        "Somewhat of a clown",
+        "Quick to flee"
+      ]
+    },
+    "all": [
+      {
+        "text": "Loves to eat",
+        "stat": "hp"
+      },
+      {
+        "text": "Takes plenty of siestas",
+        "stat": "hp"
+      },
+      {
+        "text": "Nods off a lot",
+        "stat": "hp"
+      },
+      {
+        "text": "Scatters things often",
+        "stat": "hp"
+      },
+      {
+        "text": "Likes to relax",
+        "stat": "hp"
+      },
+      {
+        "text": "Proud of its power",
+        "stat": "attack"
+      },
+      {
+        "text": "Likes to thrash about",
+        "stat": "attack"
+      },
+      {
+        "text": "A little quick tempered",
+        "stat": "attack"
+      },
+      {
+        "text": "Likes to fight",
+        "stat": "attack"
+      },
+      {
+        "text": "Quick tempered",
+        "stat": "attack"
+      },
+      {
+        "text": "Sturdy body",
+        "stat": "defense"
+      },
+      {
+        "text": "Capable of taking hits",
+        "stat": "defense"
+      },
+      {
+        "text": "Highly persistent",
+        "stat": "defense"
+      },
+      {
+        "text": "Good endurance",
+        "stat": "defense"
+      },
+      {
+        "text": "Good perseverance",
+        "stat": "defense"
+      },
+      {
+        "text": "Highly curious",
+        "stat": "special_attack"
+      },
+      {
+        "text": "Mischievous",
+        "stat": "special_attack"
+      },
+      {
+        "text": "Thoroughly cunning",
+        "stat": "special_attack"
+      },
+      {
+        "text": "Often lost in thought",
+        "stat": "special_attack"
+      },
+      {
+        "text": "Very finicky",
+        "stat": "special_attack"
+      },
+      {
+        "text": "Strong willed",
+        "stat": "special_defense"
+      },
+      {
+        "text": "Somewhat vain",
+        "stat": "special_defense"
+      },
+      {
+        "text": "Strongly defiant",
+        "stat": "special_defense"
+      },
+      {
+        "text": "Hates to lose",
+        "stat": "special_defense"
+      },
+      {
+        "text": "Somewhat stubborn",
+        "stat": "special_defense"
+      },
+      {
+        "text": "Likes to run",
+        "stat": "speed"
+      },
+      {
+        "text": "Alert to sounds",
+        "stat": "speed"
+      },
+      {
+        "text": "Impetuous and silly",
+        "stat": "speed"
+      },
+      {
+        "text": "Somewhat of a clown",
+        "stat": "speed"
+      },
+      {
+        "text": "Quick to flee",
+        "stat": "speed"
+      }
+    ]
+  },
+  "characteristic_map": {
+    "Loves to eat": "hp",
+    "Takes plenty of siestas": "hp",
+    "Nods off a lot": "hp",
+    "Scatters things often": "hp",
+    "Likes to relax": "hp",
+    "Proud of its power": "attack",
+    "Likes to thrash about": "attack",
+    "A little quick tempered": "attack",
+    "Likes to fight": "attack",
+    "Quick tempered": "attack",
+    "Sturdy body": "defense",
+    "Capable of taking hits": "defense",
+    "Highly persistent": "defense",
+    "Good endurance": "defense",
+    "Good perseverance": "defense",
+    "Highly curious": "special_attack",
+    "Mischievous": "special_attack",
+    "Thoroughly cunning": "special_attack",
+    "Often lost in thought": "special_attack",
+    "Very finicky": "special_attack",
+    "Strong willed": "special_defense",
+    "Somewhat vain": "special_defense",
+    "Strongly defiant": "special_defense",
+    "Hates to lose": "special_defense",
+    "Somewhat stubborn": "special_defense",
+    "Likes to run": "speed",
+    "Alert to sounds": "speed",
+    "Impetuous and silly": "speed",
+    "Somewhat of a clown": "speed",
+    "Quick to flee": "speed"
+  },
+  "translation_notes": [
+    {
+      "before_generation": 6,
+      "messages": [
+        "Takes plenty of siestas",
+        "Nods off a lot",
+        "Often dozes off",
+        "Often scatters things"
+      ],
+      "description": "Note: Prior to Generation 6, the messagesTakes plenty of siestasandNods off a lotwere mistranslated asOften dozes offandOften scatters thingsrespectively."
+    }
+  ],
+  "source_notes": {
+    "individual_values": "Individual Values (IVs for short) are key to determining your Pokémon's stats. IVs are randomly assigned when you encounter any wild Pokémon (or receive it as a gift or egg). You cannot change a Pokémon's IVs once caught and there is no way to know the exact IVs in-game.IVs consist of six numbers corresponding to HP, Attack, Defense, Special Attack, Special Defense and Speed. Each range from 0-31 and the higher the number, the better your Pokémon's stat will be.IVs also determine the type and strength of the moveHidden Power. In Pokémon Platinum, HeartGold and SoulSilver, you can find out what type Hidden Power would be for any Pokémon by showing it to a man in the game corner Prize Exchange building (Veilstone City for Platinum, Celadon City for HG/SS). IVs consist of six numbers corresponding to HP, Attack, Defense, Special Attack, Special Defense and Speed. Each range from 0-31 and the higher the number, the better your Pokémon's stat will be.IVs also determine the type and strength of the moveHidden Power. In Pokémon Platinum, HeartGold and SoulSilver, you can find out what type Hidden Power would be for any Pokémon by showing it to a man in the game corner Prize Exchange building (Veilstone City for Platinum, Celadon City for HG/SS). IVs also determine the type and strength of the moveHidden Power. In Pokémon Platinum, HeartGold and SoulSilver, you can find out what type Hidden Power would be for any Pokémon by showing it to a man in the game corner Prize Exchange building (Veilstone City for Platinum, Celadon City for HG/SS).",
+    "personality_values": "Personality Values were introduced in Generation 3 (Ruby/Sapphire). Like IVs they are a random number assigned to the Pokémon upon encountering or receiving it. They determine most of a Pokémon's attributes:GenderShininess (1/8192 chance)Ability(if it two possibilities)NatureUnown'sletterWurmple'sevolution (into eitherSilcoonorCascoon)Spinda'sspots",
+    "characteristics": "Characteristicsare another in-game barometer of key strengths. In your Pokémon's summary it will say one of the following messages, which tells you your Pokémon's best IV stat. For example, if it saysProud of its powerthen its Attack IV is higher than the other IVs.HPLoves to eatTakes plenty of siestasNods off a lotScatters things oftenLikes to relaxAttackProud of its powerLikes to thrash aboutA little quick temperedLikes to fightQuick temperedDefenseSturdy bodyCapable of taking hitsHighly persistentGood enduranceGood perseveranceSpecial AttackHighly curiousMischievousThoroughly cunningOften lost in thoughtVery finickySpecial DefenseStrong willedSomewhat vainStrongly defiantHates to loseSomewhat stubbornSpeedLikes to runAlert to soundsImpetuous and sillySomewhat of a clownQuick to fleeNote: Prior to Generation 6, the messagesTakes plenty of siestasandNods off a lotwere mistranslated asOften dozes offandOften scatters thingsrespectively."
+  }
+}

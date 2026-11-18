@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "source": "https://pokemondb.net/mechanics/natures",
+    "introduced_generation": 3,
+    "total_natures": 25
+  },
+  "berry_flavor_mapping": {
+    "attack": "Spicy",
+    "defense": "Sour",
+    "speed": "Sweet",
+    "special_attack": "Dry",
+    "special_defense": "Bitter"
+  },
+  "natures": [
+    {
+      "name": "Adamant",
+      "increases": "attack",
+      "decreases": "special_attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.1,
+        "defense": 1.0,
+        "special_attack": 0.9,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Spicy",
+        "dislikes": "Dry"
+      },
+      "source": {
+        "increases": "Attack",
+        "decreases": "Sp. Atk"
+      }
+    },
+    {
+      "name": "Bashful",
+      "increases": "special_attack",
+      "decreases": "special_attack",
+      "is_neutral": true,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Dry",
+        "dislikes": "Dry"
+      },
+      "source": {
+        "increases": "Sp. Atk",
+        "decreases": "Sp. Atk"
+      }
+    },
+    {
+      "name": "Bold",
+      "increases": "defense",
+      "decreases": "attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 0.9,
+        "defense": 1.1,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Sour",
+        "dislikes": "Spicy"
+      },
+      "source": {
+        "increases": "Defense",
+        "decreases": "Attack"
+      }
+    },
+    {
+      "name": "Brave",
+      "increases": "attack",
+      "decreases": "speed",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.1,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 0.9
+      },
+      "berry_flavor": {
+        "likes": "Spicy",
+        "dislikes": "Sweet"
+      },
+      "source": {
+        "increases": "Attack",
+        "decreases": "Speed"
+      }
+    },
+    {
+      "name": "Calm",
+      "increases": "special_defense",
+      "decreases": "attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 0.9,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.1,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Bitter",
+        "dislikes": "Spicy"
+      },
+      "source": {
+        "increases": "Sp. Def",
+        "decreases": "Attack"
+      }
+    },
+    {
+      "name": "Careful",
+      "increases": "special_defense",
+      "decreases": "special_attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 0.9,
+        "special_defense": 1.1,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Bitter",
+        "dislikes": "Dry"
+      },
+      "source": {
+        "increases": "Sp. Def",
+        "decreases": "Sp. Atk"
+      }
+    },
+    {
+      "name": "Docile",
+      "increases": "defense",
+      "decreases": "defense",
+      "is_neutral": true,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Sour",
+        "dislikes": "Sour"
+      },
+      "source": {
+        "increases": "Defense",
+        "decreases": "Defense"
+      }
+    },
+    {
+      "name": "Gentle",
+      "increases": "special_defense",
+      "decreases": "defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 0.9,
+        "special_attack": 1.0,
+        "special_defense": 1.1,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Bitter",
+        "dislikes": "Sour"
+      },
+      "source": {
+        "increases": "Sp. Def",
+        "decreases": "Defense"
+      }
+    },
+    {
+      "name": "Hardy",
+      "increases": "attack",
+      "decreases": "attack",
+      "is_neutral": true,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Spicy",
+        "dislikes": "Spicy"
+      },
+      "source": {
+        "increases": "Attack",
+        "decreases": "Attack"
+      }
+    },
+    {
+      "name": "Hasty",
+      "increases": "speed",
+      "decreases": "defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 0.9,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.1
+      },
+      "berry_flavor": {
+        "likes": "Sweet",
+        "dislikes": "Sour"
+      },
+      "source": {
+        "increases": "Speed",
+        "decreases": "Defense"
+      }
+    },
+    {
+      "name": "Impish",
+      "increases": "defense",
+      "decreases": "special_attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.1,
+        "special_attack": 0.9,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Sour",
+        "dislikes": "Dry"
+      },
+      "source": {
+        "increases": "Defense",
+        "decreases": "Sp. Atk"
+      }
+    },
+    {
+      "name": "Jolly",
+      "increases": "speed",
+      "decreases": "special_attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 0.9,
+        "special_defense": 1.0,
+        "speed": 1.1
+      },
+      "berry_flavor": {
+        "likes": "Sweet",
+        "dislikes": "Dry"
+      },
+      "source": {
+        "increases": "Speed",
+        "decreases": "Sp. Atk"
+      }
+    },
+    {
+      "name": "Lax",
+      "increases": "defense",
+      "decreases": "special_defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.1,
+        "special_attack": 1.0,
+        "special_defense": 0.9,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Sour",
+        "dislikes": "Bitter"
+      },
+      "source": {
+        "increases": "Defense",
+        "decreases": "Sp. Def"
+      }
+    },
+    {
+      "name": "Lonely",
+      "increases": "attack",
+      "decreases": "defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.1,
+        "defense": 0.9,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Spicy",
+        "dislikes": "Sour"
+      },
+      "source": {
+        "increases": "Attack",
+        "decreases": "Defense"
+      }
+    },
+    {
+      "name": "Mild",
+      "increases": "special_attack",
+      "decreases": "defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 0.9,
+        "special_attack": 1.1,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Dry",
+        "dislikes": "Sour"
+      },
+      "source": {
+        "increases": "Sp. Atk",
+        "decreases": "Defense"
+      }
+    },
+    {
+      "name": "Modest",
+      "increases": "special_attack",
+      "decreases": "attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 0.9,
+        "defense": 1.0,
+        "special_attack": 1.1,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Dry",
+        "dislikes": "Spicy"
+      },
+      "source": {
+        "increases": "Sp. Atk",
+        "decreases": "Attack"
+      }
+    },
+    {
+      "name": "Naive",
+      "increases": "speed",
+      "decreases": "special_defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 0.9,
+        "speed": 1.1
+      },
+      "berry_flavor": {
+        "likes": "Sweet",
+        "dislikes": "Bitter"
+      },
+      "source": {
+        "increases": "Speed",
+        "decreases": "Sp. Def"
+      }
+    },
+    {
+      "name": "Naughty",
+      "increases": "attack",
+      "decreases": "special_defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.1,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 0.9,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Spicy",
+        "dislikes": "Bitter"
+      },
+      "source": {
+        "increases": "Attack",
+        "decreases": "Sp. Def"
+      }
+    },
+    {
+      "name": "Quiet",
+      "increases": "special_attack",
+      "decreases": "speed",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.1,
+        "special_defense": 1.0,
+        "speed": 0.9
+      },
+      "berry_flavor": {
+        "likes": "Dry",
+        "dislikes": "Sweet"
+      },
+      "source": {
+        "increases": "Sp. Atk",
+        "decreases": "Speed"
+      }
+    },
+    {
+      "name": "Quirky",
+      "increases": "special_defense",
+      "decreases": "special_defense",
+      "is_neutral": true,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Bitter",
+        "dislikes": "Bitter"
+      },
+      "source": {
+        "increases": "Sp. Def",
+        "decreases": "Sp. Def"
+      }
+    },
+    {
+      "name": "Rash",
+      "increases": "special_attack",
+      "decreases": "special_defense",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.1,
+        "special_defense": 0.9,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Dry",
+        "dislikes": "Bitter"
+      },
+      "source": {
+        "increases": "Sp. Atk",
+        "decreases": "Sp. Def"
+      }
+    },
+    {
+      "name": "Relaxed",
+      "increases": "defense",
+      "decreases": "speed",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.1,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 0.9
+      },
+      "berry_flavor": {
+        "likes": "Sour",
+        "dislikes": "Sweet"
+      },
+      "source": {
+        "increases": "Defense",
+        "decreases": "Speed"
+      }
+    },
+    {
+      "name": "Sassy",
+      "increases": "special_defense",
+      "decreases": "speed",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.1,
+        "speed": 0.9
+      },
+      "berry_flavor": {
+        "likes": "Bitter",
+        "dislikes": "Sweet"
+      },
+      "source": {
+        "increases": "Sp. Def",
+        "decreases": "Speed"
+      }
+    },
+    {
+      "name": "Serious",
+      "increases": "speed",
+      "decreases": "speed",
+      "is_neutral": true,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 1.0,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.0
+      },
+      "berry_flavor": {
+        "likes": "Sweet",
+        "dislikes": "Sweet"
+      },
+      "source": {
+        "increases": "Speed",
+        "decreases": "Speed"
+      }
+    },
+    {
+      "name": "Timid",
+      "increases": "speed",
+      "decreases": "attack",
+      "is_neutral": false,
+      "stat_modifiers": {
+        "hp": 1.0,
+        "attack": 0.9,
+        "defense": 1.0,
+        "special_attack": 1.0,
+        "special_defense": 1.0,
+        "speed": 1.1
+      },
+      "berry_flavor": {
+        "likes": "Sweet",
+        "dislikes": "Spicy"
+      },
+      "source": {
+        "increases": "Speed",
+        "decreases": "Attack"
+      }
+    }
+  ]
+}

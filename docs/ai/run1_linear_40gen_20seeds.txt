@@ -1,0 +1,44 @@
+recorded 100 baseline battles to data_out/baseline_decisions.jsonl
+gen   1  mean win rate  82.5%  best  85.0%
+gen   2  mean win rate  83.8%  best  85.0%
+gen   3  mean win rate  82.0%  best  86.2%
+gen   4  mean win rate  82.9%  best  83.8%
+gen   5  mean win rate  87.3%  best  87.5%
+gen   6  mean win rate  85.5%  best  86.2%
+gen   7  mean win rate  83.3%  best  83.8%
+gen   8  mean win rate  84.1%  best  86.2%
+gen   9  mean win rate  86.6%  best  87.5%
+gen  10  mean win rate  77.9%  best  78.8%
+gen  11  mean win rate  80.9%  best  81.2%
+gen  12  mean win rate  86.1%  best  87.5%
+gen  13  mean win rate  77.4%  best  77.5%
+gen  14  mean win rate  79.8%  best  81.2%
+gen  15  mean win rate  77.0%  best  78.8%
+gen  16  mean win rate  86.2%  best  87.5%
+gen  17  mean win rate  80.5%  best  81.2%
+gen  18  mean win rate  80.9%  best  81.2%
+gen  19  mean win rate  84.4%  best  85.0%
+gen  20  mean win rate  81.7%  best  82.5%
+gen  21  mean win rate  88.1%  best  88.8%
+gen  22  mean win rate  80.9%  best  82.5%
+gen  23  mean win rate  78.2%  best  78.8%
+gen  24  mean win rate  83.0%  best  85.0%
+gen  25  mean win rate  84.8%  best  86.2%
+gen  26  mean win rate  76.4%  best  77.5%
+gen  27  mean win rate  78.9%  best  80.0%
+gen  28  mean win rate  81.2%  best  82.5%
+gen  29  mean win rate  88.5%  best  88.8%
+gen  30  mean win rate  87.3%  best  87.5%
+gen  31  mean win rate  85.2%  best  86.2%
+gen  32  mean win rate  85.8%  best  87.5%
+gen  33  mean win rate  83.5%  best  83.8%
+gen  34  mean win rate  83.4%  best  83.8%
+gen  35  mean win rate  90.6%  best  92.5%
+gen  36  mean win rate  80.3%  best  81.2%
+gen  37  mean win rate  74.1%  best  77.5%
+gen  38  mean win rate  87.3%  best  87.5%
+gen  39  mean win rate  91.2%  best  91.2%
+gen  40  mean win rate  80.8%  best  82.5%
+
+held-out matchups (240 paired battles): learned minus baseline = -1.7 points [-4.5, +1.2] (95%)
+NOT SHIPPED: the learned policy did not beat the rule-based AI on held-out matchups with a confidence interval above zero. The game keeps the rule-based AI.

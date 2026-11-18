@@ -1,0 +1,19 @@
+{
+  "source": "https://pokemondb.net/mechanics/natures",
+  "scraped_at": "2026-09-22T15:05:10.948513Z",
+  "total_natures": 25,
+  "unique_natures": 25,
+  "duplicate_natures": 0,
+  "neutral_natures": 5,
+  "non_neutral_natures": 20,
+  "validation": {
+    "alphabetical_table": "passed",
+    "stat_matrix": "passed",
+    "nature_cross_check": "passed",
+    "berry_mapping": "passed",
+    "modifier_validation": "passed",
+    "json_validation": "passed"
+  },
+  "errors": [],
+  "status": "success"
+}

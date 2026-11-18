@@ -1,0 +1,46 @@
+{
+  "source": "https://pokemondb.net/mechanics/hidden",
+  "scraped_at": "2026-09-22T15:10:11.835230Z",
+  "individual_values": {
+    "stat_count": 6,
+    "minimum": 0,
+    "maximum": 31,
+    "missing_stats": [],
+    "status": "passed"
+  },
+  "personality_values": {
+    "introduced_generation": 3,
+    "relationship_count": 7,
+    "missing_relationships": [],
+    "shininess_ratio": "1/8192",
+    "shininess_numerator": 1,
+    "shininess_denominator": 8192,
+    "status": "passed"
+  },
+  "characteristics": {
+    "stat_count": 6,
+    "total_messages": 30,
+    "messages_per_stat": {
+      "hp": 5,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 5,
+      "special_defense": 5,
+      "speed": 5
+    },
+    "missing_or_incorrect_stats": [],
+    "status": "passed"
+  },
+  "translation_notes": {
+    "detected": true,
+    "count": 1
+  },
+  "validation": {
+    "json_valid": true,
+    "unicode_valid": true,
+    "source_structure_valid": true,
+    "no_missing_characteristics": true
+  },
+  "errors": [],
+  "status": "success"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Ultra Ball",
+  "category": "Pokeballs",
+  "effect": "Catches wild Pokémon with 2x the rate of a Poké Ball.",
+  "image_url": "https://img.pokemondb.net/sprites/items/ultra-ball.png",
+  "image_alt": "Ultra Ball icon",
+  "item_url": "https://pokemondb.net/item/ultra-ball",
+  "source_url": "https://pokemondb.net/item/ultra-ball",
+  "full_effect": "Catches wild Pokémon with 2x the rate of a Poké Ball.",
+  "short_description": null,
+  "game_descriptions": {
+    "Ruby/SapphireEmerald": "A better BALL with a higher catch rate than a GREAT BALL.",
+    "FireRed/LeafGreen": "A very high-grade BALL that offers a higher POKéMON catch rate than a GREAT BALL.",
+    "Diamond/PearlPlatinumHeartGold/SoulSilver": "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",
+    "Black/WhiteBlack 2/White 2": "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",
+    "X/YO.Ruby/A.Sapphire": "An ultra-high-performance Poké Ball that provides a higher success rate for catching Pokémon than a Great Ball.",
+    "Sun/MoonUltra Sun/Ultra MoonL.G. Pikachu/L.G. Eevee": "An ultra-high-performance Poké Ball that provides a higher success rate for catching Pokémon than a Great Ball.",
+    "Sword/ShieldB.Diamond/S.Pearl": "An ultra-high-performance Poké Ball that provides a higher success rate for catching Pokémon than a Great Ball.",
+    "Legends: Arceus": "A mysterious ball that provides an even higher success rate for catching Pokémon than a Great Ball does.",
+    "Scarlet/Violet": "An ultra-high-performance Poké Ball that provides a higher success rate for catching Pokémon than a Great Ball."
+  },
+  "languages": {
+    "English": "Ultra Ball",
+    "Japanese": "ハイパーボール",
+    "German": "Hyperball",
+    "French": "Hyper Ball",
+    "Italian": "Ultra Ball",
+    "Spanish": "Ultra Ball",
+    "Korean": "하이퍼볼",
+    "Chinese (Simplified)": "高级球",
+    "Chinese (Traditional)": "高級球"
+  },
+  "locations": [],
+  "evolution": [],
+  "held_by_pokemon": []
+}

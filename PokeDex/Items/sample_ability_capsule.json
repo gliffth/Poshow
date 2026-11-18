@@ -1,0 +1,31 @@
+{
+  "name": "Ability Capsule",
+  "category": "Hold items",
+  "effect": "A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.",
+  "image_url": "https://img.pokemondb.net/sprites/items/ability-capsule.png",
+  "image_alt": "Ability Capsule icon",
+  "item_url": "https://pokemondb.net/item/ability-capsule",
+  "source_url": "https://pokemondb.net/item/ability-capsule",
+  "full_effect": "A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.",
+  "short_description": null,
+  "game_descriptions": {
+    "X/YO.Ruby/A.Sapphire": "A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.",
+    "Sun/MoonUltra Sun/Ultra Moon": "A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.",
+    "Sword/ShieldB.Diamond/S.Pearl": "A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.",
+    "Scarlet/Violet": "A capsule that allows a Pokémon to switch its current Ability to the other Ability its species can have."
+  },
+  "languages": {
+    "English": "Ability Capsule",
+    "Japanese": "とくせいカプセル",
+    "German": "Fähigkeiten-Kapsel",
+    "French": "Pilule Talent",
+    "Italian": "Capsula abilità",
+    "Spanish": "Cápsula Habilidad",
+    "Korean": "특성캡슐",
+    "Chinese (Simplified)": "特性胶囊",
+    "Chinese (Traditional)": "特性膠囊"
+  },
+  "locations": [],
+  "evolution": [],
+  "held_by_pokemon": []
+}
